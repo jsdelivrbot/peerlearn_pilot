@@ -4,11 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://rawgit.com/marinawang/peerlearn_pilot/master/peerlearn_pilot/static/peerlearn_pilot/peerlearn_pilot.css">
     <title> Give Feedback to Your Peers</title>
-
-<!--     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-    <script src="static/mturk.js" type="text/javascript"></script>
- -->
+    <script src="/static/mturk.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -19,7 +15,6 @@
         {{error}}
     </div>
     {% endfor %}
-<!-- WorkerId: <p id="workerid"></p> -->
 <div id="instructions">
 <p>Here is the step-by-step overview of this task. In the task you're required to <b>provide feedback</b> on an assignment done by your (hypothesized) classmate. </p>
 <p>We will walk you through some preparations before you write the feedback.</p>
@@ -268,10 +263,10 @@ Please check whether the information the author included is correct and whether 
 <textarea name="accuracy" rows="12" cols="50" form=responseform class="repsponsetext"></textarea> 
 <br><br>
 
-mturkid: <input type="text" name="mturkid">
+<input id="workerid" type="text" name="mturkid" value = "workerid" hidden>
 <br><br>
 
-<input type="submit" text="Subit" value = "Submit" id="submit">
+<input type="submit" text="Submit" value = "Submit" id="submit">
 {% csrf_token %}
 
 
