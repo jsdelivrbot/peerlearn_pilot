@@ -1,0 +1,157 @@
+.clarity{
+    width: 100%;
+    height: 300px;
+    text-align: top;
+
+
+}
+.error{
+    color:red;
+    font-size: 20px;
+}
+
+
+.firstparagraph{
+    margin-top:20px;
+    margin-left: 5px;
+    font-size:large;
+    padding: 10px;
+}
+
+.label {
+    font-size: large;
+    background-color: #ECF1DF;
+    color:black;
+    font-family: "Verdana";
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+#submit {
+    font-size: large;
+    background-color: #ECF1DF;
+    color:black;
+    font-family: "Verdana";
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+textarea{
+    width: auto;
+    height:auto;
+    font-size:14px;
+    resize: horizontal;
+}
+
+
+.title {
+    border: 2px solid;
+    font-size: x-large;
+    font-weight: bolder;
+    width: 90%;
+    padding: 10px 20px;
+    background-color: #F8EADA;
+    border-radius: 20px;
+    font-family: "Verdana";
+    text-align: center;
+}
+
+.welcome {
+    border: 2px solid;
+    font-size: x-large;
+    font-weight: bolder;
+    width: 90%;
+    padding: 10px 20px;
+    background-color: #F8EADA;
+    border-radius: 20px;
+    margin: 20px;
+    font-family: "Verdana";
+    text-align: center;
+}
+
+#instructions{
+    margin: 20px;
+    font-size: large;    
+}
+
+#learning{
+    font-size: large; 
+    margin:20px;   
+}
+
+
+#task{
+    font-size: large; 
+    margin:20px;   
+}
+
+#feedback{
+    font-size: large; 
+    margin:20px;   
+}
+
+#response{
+    font-size: large; 
+    margin:20px;   
+}
+
+#coal{
+    padding:10px;
+    background-color: #ECF1DF;
+
+}
+
+#proposal{
+    padding:10px;
+    background-color: #F8EADA;
+
+}
+#point{
+    background-color: #F8EADA;
+    margin:5px 20px;
+    font-weight: bolder;
+
+}
+#requirements{
+
+    padding: 10px;
+    margin: 5px;
+    background-color: #F8EADA;
+}
+
+#display{
+    border: 3px solid;
+    text-align:left;
+    width: 45%;
+    padding:10px;
+    font-size:14px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-left: 20px;
+    font-family: "Verdana";
+    float:left;
+}
+#display2{
+    border: 3px solid;
+    text-align:left;
+
+    width: 45%;
+    padding:10px;
+    font-size:14px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-left: 20px;
+    font-family: "Verdana";
+    float:left;
+}
+table, th, td{
+    border: 1px solid black;
+}
+
+.login{
+    margin: 20px;
+    font-size: large;
+    font-weight: bolder;
+    padding-bottom: 20px;
+}
