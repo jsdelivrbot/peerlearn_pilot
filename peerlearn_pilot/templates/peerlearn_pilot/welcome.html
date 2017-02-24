@@ -4,31 +4,58 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://rawgit.com/marinawang/peerlearn_pilot/master/peerlearn_pilot/static/peerlearn_pilot/peerlearn_pilot.css">
     <title> Give Feedback to Your Peers</title>
-    <script src="/static/mturk.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="https://rawgit.com/marinawang/peerlearn_pilot/master/peerlearn_pilot/static/mturk.js" type="text/javascript"></script>
 </head>
 
 <body>
-
-<div class="welcome">Give Feedback to Your Peers</div>
     {% for error in errors %}
     <div class="error">
         {{error}}
     </div>
     {% endfor %}
+    
+<div class="welcome">Give Feedback to Your Peers</div>
+
 <div id="instructions">
-<p>Here is the step-by-step overview of this task. In the task you're required to <b>provide feedback</b> on an assignment done by your (hypothesized) classmate. </p>
+<p>Here is the step-by-step overview of this task. In the task you're required to <b>provide feedback</b> on an assignment done by your hypothetical classmate. </p>
 <p>We will walk you through some preparations before you write the feedback.</p>
-<p>1. First step: you'll read some learning materials of 4 energy types. </p>
-<p>2. Second step: you'll read the task your classmates have worked on. </p>
-<p>3. Third step: you'll read some instructions on how to provide good feedback. </p>
+<p>1. First step: you'll read some instructions on how to provide good feedback. </p>
+<p>2. Second step: you'll read learning materials of 4 energy types. </p>
+<p>2. Third step: you'll read the task your classmates have worked on. </p>
 <p>4. Fourth step: you'll <b>write feedback</b> to your peer's assignment.</p>
 <p>5. Last step: you'll get a code to submit the HIT.</p>
 <p><br></p>
-<p><a href="#learning" class = "label">Begin the Task</a></p>
+<!-- <p><a href="#learning" class = "label">Begin the Task</a></p> -->
+</div>
+<p><br></p>
+
+<div id="feedback">
+<h class="title">Step 1: Read instructions on how to provide feedback </h>
+<p class="firstparagraph"><br>
+<b>General tips for giving good feedback:</b><br></p>
+<p id="coal">
+There are two very important parts to giving good feedback. <b>First, give very specific comments rather than vague comments</b>: Point to exact places that were problematic; give examples of general problems that you found; be clear about what exactly the problem was; explain why it was a problem, etc. <b>Second, make your comments helpful.</b> The goal is not to punish the writer for making mistakes. Instead your goal is to help the writer improve his or her paper. You should point out problems where they occur. But don’t stop there. Explain why they are problems and give some clear advice on how to fix the problems. Also keep your tone professional. No personal attacks. Everyone makes mistakes. Everyone can improve writing.
+</p>
+<p class="firstparagraph">
+<b>Now you’re asked to provide feedback on your peer’s work from the following three dimensions. Here is a brief summary of the three dimensions, and we will explain them in detail later.</b><br>
+<ol id="proposal">
+    <li id="point">Clarity of the arguments</li>
+    This dimension relates to whether the writing flows smoothly so that you can easily understand the arguments the author is trying to make.
+    <li id="point">Logic of the arguments</li>
+    This dimension relates to the reasoning of the author, for example whether the author provides evidence to support his argument, and whether the evidence provided justifies the argument.
+    <li id="point">Acuracy and adequacy of arguments</li>
+    This dimension relates to whether the information included is correct, whether the author considers different perspectives or tradeoffs in making a claim, in contrast to where a claim is made on a single point.
+</ol>
+
+
+<p><br></p>
+<!-- <p><a href="#response" class = "label">Next step</a></p> -->
+</p>
 </div>
 <p><br></p>
 <div id="learning"> 
-<h class="title">Step 1: Learn about 4 types of energy</h>
+<h class="title">Step 2: Learn about 4 types of energy</h>
 <h2 class = "firstparagraph">Please take 10 mins to read the following 4 paragraphs.</h2>
 <p id= "coal"><b>Coal energy</b> refers to power produced by coal burning generators or industrial applications using large amounts of coal for heat, including steel manufacturing. Coal is a mineral found in abundance in most parts of the world, thus it is an economical energy source.<br><br>
 <i>Pros of coal energy</i><br><br>
@@ -92,7 +119,8 @@ Where most homes can make use of solar panels for heating or generating electric
 <p id = "coal">
 <b>Nuclear energy</b> has some significant advantages over other traditional energy resources. It produces less pollution than other sources of energy and it reduces the levels of CO2 released into the atmosphere for each unit of energy produced in comparison to other sources of energy that rely on fossil fuel or coal to provide power. The energy obtained is by far more intense than other sources, nuclear energy is economical in the long run.<br><br>
 <i>Pros of nuclear energy</i><br><br>
-<b>Cost effective</b>Because of the fact that nuclear power produces more energy with less effort, it is therefore more cost competitive<br><br>
+<b>Cost effective</b><br>
+Because of the fact that nuclear power produces more energy with less effort, it is therefore more cost competitive<br><br>
 <i>Cons of nuclear energy</i><br><br>
 On the other hand, nuclear energy has certain disadvantages too. The by-product of nuclear energy, which is a toxic waste, is a major problem for nuclear energy. It takes great effort to safely and properly store the waste and this is why the storage costs are extremely high, thus adding up to the final price paid for this type of energy. The planning and construction for a nuclear power plant takes about 10 to 30 years, so this cannot be considered as a fast and cheap way to obtain energy.<br><br>
 <b>Accidents can happen</b><br>
@@ -126,21 +154,21 @@ Creating most hydroelectric plants creates significant changes to the local wate
 <b>Large water reservoirs and earthquakes</b><br>
 The use of large scale reservoirs has lead many experts to believe that it can cause earthquakes. There is no way to predict what effect relocating and concentrating so many millions of tons of water will have on local tectonic activity. Many believe that it could caused previously stable plates to shift, creating a severe earthquake.<br>
 <p><br></p>
-<p><a href="#task" class = "label">Next step</a></p>
+<!-- <p><a href="#task" class = "label">Next step</a></p> -->
 </div>
 <p><br></p>
 <div id="task">
-<h class="title">Step 2: Read the task your classmates worked on</h>
+<h class="title">Step 3: Read the task your classmates worked on</h>
 <p><br></p>
 <p id="proposal">
 
-<b>Your classmates have written an assignment based on the instructions as belows. Please read the task so that you know what to expect in your peers' assignments.</b>
+<b>Your classmates have written an assignment based on the instructions as belows. Please read the task so that you know what to expect in your peer's assignment.</b>
 <br><br>
-In this task, please recommend a way of distributing resources across energy types for the administration of City B. City B requires 12,000,000 MWh electricity a year from four types of energy sources: coal power, wind power, nuclear power and hydro power. We have provided 4 different plans to choose from, each of which emphasizes one energy source as primary. Specifically the plans describe how much energy should be generated from each of the four energy sources, listed in the table below. You need to choose a plan that is the best way of meeting the assigned goals, given the city's requirements and information below. Please write an energy proposal based on the plan you chose, with supporting arguments and evidence. Make sure to consider as many requirements mentioned below as possible and consider tradeoffs of different plans.<br><br>
+In this task, please recommend a way of distributing resources across energy types for the administration of City A. City A requires 12,000,000 MWh electricity a year from four types of energy sources: coal power, wind power, nuclear power and hydro power. We have provided 4 different plans to choose from, each of which emphasizes one energy source as primary. Specifically the plans describe how much energy should be generated from each of the four energy sources, listed in the table below. You need to choose a plan that is the best way of meeting the assigned goals, given the city's requirements and information below. Please write an energy proposal based on the plan you chose, with supporting arguments and evidence. Make sure to consider as many requirements mentioned below as possible and consider tradeoffs of different plans.<br><br>
 </p>
 
-<ol><b>Citi B's requirements and information:</b>
-<li>City B has a tight yearly energy budget of $900,000,000.
+<ol><b>Citi A's requirements and information:</b>
+<li>City A has a tight yearly energy budget of $900,000,000.
 Coal power costs $30/MWh. Nuclear power costs $90/MWh. Wind power costs $80/MWh. Hydro power costs $110/MWh.</li>
 <li>The city is concerned with chemical waste. If the main energy source releases toxic chemical waste, there is a waste disposal cost of $2/MWh.</li>
 <li>The city is a famous tourist city for its natural bird habitats.</li>
@@ -200,71 +228,50 @@ Coal power costs $30/MWh. Nuclear power costs $90/MWh. Wind power costs $80/MWh.
 </table>
 
 <p><br></p>
-<p><a href="#feedback" class = "label">Next step</a></p>
+<!-- <p><a href="#feedback" class = "label">Next step</a></p> -->
 </div>
 <p><br></p>
-<div id="feedback">
-<h class="title">Step 3: Read instructions on how to provide feedback</h>
-<p class="firstparagraph"><br>
-<b>General tips for giving good feedback:</b><br></p>
-<p id="coal">
-There are two very important parts to giving good feedback. <b>First, give very specific comments rather than vague comments</b>: Point to exact places that were problematic; give examples of general problems that you found; be clear about what exactly the problem was; explain why it was a problem, etc. <b>Second, make your comments helpful.</b> The goal is not to punish the writer for making mistakes. Instead your goal is to help the writer improve his or her paper. You should point out problems where they occur. But don’t stop there. Explain why they are problems and give some clear advice on how to fix the problems. Also keep your tone professional. No personal attacks. Everyone makes mistakes. Everyone can improve writing.
-</p>
-<p class="firstparagraph">
-<b>Now you’re asked to provide feedback on your peer’s work from the following three dimensions. Here is a brief summary of the three dimensions, and we will explain them in detail later.</b><br>
-<ol id="proposal">
-    <li id="point">Clarity of the arguments</li>
-    This dimension relates to whether the writing flows smoothly so that you can easily understand what the arguments the author is trying to make.
-    <li id="point">Logic of the arguments</li>
-    This dimension relates to the reasoning of the author, for example whether the author provides evidence to support his argument, and is the evidence provided justifying the argument?
-    <li id="point">Acuracy and adequacy of arguments</li>
-    This dimension relates to whether the information included is correct, whether the author considers different perspectives or tradeoffs to make a claim, in contrast to where a claim is made on a single point.
-</ol>
 
-
-<p><br></p>
-<p><a href="#response" class = "label">Next step</a></p>
-</p>
-</div>
-<p><br></p>
 <div id="response">
     
 <h class="title">Step 4: Write feedback to your peers!</h></div>
 
 <div id="display">
-<b>Assignment by "Bill":</b><br>
-I recommend Plan 2 for the following 10 reasons: (1) It is the safest one for environment, (2) it produces the least amount of waste because it relies on wind energy, (3) it has fallbacks when wind is not enough, (3) water pollution is not a huge problem as hydro is not the main focus, (4) low greenhouse gas emission so there is no carbon tax, (5) high renewable tax credit, (6) wind energy can be used to power the hospital as it can be stored, if not enough other alternative methods can be relied upon, (7) turbines are highly durable so less maintenance is needed compared to reliance on other forms of energy, (8) easier to place in locations that would not harm the bird populations, (9) low start up cost and consistency, and (10) minimal water pollution as hydro is only relied on 20%. <br><br>
- 
-Although Plan 2 does cost more than Plan1, I still think Plan 2 is definitely better for the environment. In addition, Plan 1 has very high waste disposal and carbon tax which means it will increase the amount of greenhouse gas emissions instead of reducing them. In terms of the reliability, although wind might not be entirely reliable because energy is only being produced when the wind blows, we think it is OK when we also invest in other types of energy such as hydro and nuclear. These will offset any gaps where wind isn't producing energy. Bird sanctuaries might be affect from wind turbines, but we can find a place where the effects would not impact the birds as much. Although Plan D is also good due to its reliance on Hydro power and potential less damage to the bird population, it's not cost efficient It would be a viable option if the tax credit were higher. Plan C is much the same with its reliance on nuclear power. There are also questionable implications on nuclear power based on the operations and disposal/upkeep because nuclear power has a high waste disposal cost .</div>
+<b>Assignment by "Tom":</b><br>
+I recommend Plan B because it costs the least. Although we want a cleaner energy we still go with Plan B for the lower cost without wasting the reoccurring cost of waste disposal. Thus we can save more money and help the environment in the long run.
+</div>
 <form id="responseform" ="add-form" action="/peerlearn_pilot/provide_info" method="post">
 
 <div id="display2"><b>Your response:</b><br><br>
 
 <b>1. Clarity of arguments:</b>
 Please check whether the writing flows smoothly so you can follow the main argument. You can ask yourself questions like, can you find the main points? Are the transitions from one point to the next harsh, or do they transition naturally? Is the author jumping between points? Does the ordering of points make sense?<br><br>
-<i> Your comments:</i>First summarize what you perceived as the main points being made so that the writer can see whether the readers can follow the paper’s arguments. Then make specific comments about what problems you had in understanding the arguments and following the flow across arguments. Be sure to give specific advice for how to fix the problems and praise-oriented advice for strength that made the writing good.<br><br>
+<i> Your comments:</i> First summarize what you perceived as the main points being made so that the writer can see whether the readers can follow the paper’s arguments. Then make specific comments about what problems you had in understanding the arguments and following the flow across arguments. Be sure to give specific advice for how to fix the problems and offer encouragement for observed strengths that contributed positively to the writing.<br><br>
 
 
-<textarea name="clarity" rows="12" cols="50" form=responseform class="repsponsetext"></textarea> 
+<textarea name="clarity" rows="12" cols="50" form=responseform class="repsponsetext">{{clarity}}</textarea> 
 <br><br>
 
 <b>2. Logic of arguments:</b>
-Please check whether the reasoning made is easily understandable so that you know why the author made such decisions and what is the evidence that supports so. You can ask yourself questions like, did the author just make some claims, or did the author provide some supporting arguments or evidence for those claims? Did the supporting arguments support the claims being made? Or were they irrelevant or contradictory to the claim being made? Did the author consider obvious counter-arguments, or were they ignored? <br><br>
-<i> Your comments:</i>Provide specific comments about the logic of the author’s argument. If points were just made without support, describe which ones they were. If the support provided doesn’t make logical sense, explain what that is. If some obvious counterargument was not considered, explain what that counter-argument is. Then give potential fixes to these problems if you can think of any. This might involve suggesting that the author change their argument.<br><br>
+Please check whether the reasoning made is easily understandable so that you know why the author made such decisions and what evidence supports them. You can ask yourself questions such as: Did the author just make some claims, or did the author provide some supporting arguments or evidence in support of those claims? Did the supporting arguments effectively support the claims being made? Or were they irrelevant or contradictory to the claim being made? Did the author consider obvious counter-arguments, or were they ignored? <br><br>
+<i> Your comments:</i> Provide specific comments about the logic of the author’s argument. If points were just made without support, describe which ones need support. If the support provided doesn’t make logical sense, explain why and how that issue can be addressed. If some obvious counterargument was not considered, explain what that counter-argument is. In all cases, offer potential fixes to these problems if you can think of any. This might involve suggesting that the author change their argument.<br><br>
 
 
-<textarea name="logic" rows="12" cols="50" form=responseform class="repsponsetext"></textarea> 
+<textarea name="logic" rows="12" cols="50" form=responseform class="repsponsetext" >{{logic}}</textarea> 
 <br><br>
 <b>3. Accuracy and adequacy of arguments:</b>
-Please check whether the information the author included is correct and whether the author considers enough factors to make the decision, so that no critical factor is ignored. You can ask yourself questions like, did the author provide any information that is untrue? Did the author leave out important information? Did the author consider different factors that could play a role in a city’s energy plan? Did the writer introduce any new knowledge beyond what we’ve learned from the materials? <br><br>
-<i> Your comments:</i>Provide specific comments about the adequacy and accuracy of the author’s arguments. If any information is contradicted to what we learnt from the materials, try to point them out and correct them if you can. If you can think of any other factors that could play a role in a city’s energy running, it’s always a great idea to include different perspectives and provide extra information.<br><br>
+Please check whether the information the author included is correct and whether the author has considered enough factors in making the decision, so that no critical factor is ignored. You can ask yourself questions such as: Did the author provide any information that is untrue or inaccurate? Did the author leave out important information? Did the author consider different factors that could play a role in a city’s energy plan? Did the writer introduce any new knowledge beyond what the materials provide? <br><br>
+<i> Your comments:</i> Provide specific comments about the adequacy and accuracy of the author’s arguments. If any information is contradictory to what is learnt from the materials, try to point that out and correct it if you can. If you can think of any other factors that could play a role in a city’s energy management, it’s always a great idea to include different perspectives and provide extra information.<br><br>
 
 
-<textarea name="accuracy" rows="12" cols="50" form=responseform class="repsponsetext"></textarea> 
+<textarea name="accuracy" rows="12" cols="50" form=responseform class="repsponsetext">{{accuracy}}</textarea> 
 <br><br>
 
-<input id="workerid" type="text" name="mturkid" value = "workerid" hidden>
+<!-- <input id="workerid" type="text" name="mturkid" value = "workerid" hidden>
+ -->
+MturkID: <input type="text" name="mturkid" placeholder="please enter your MturkID">{{mturkid}}
 <br><br>
+
 
 <input type="submit" text="Submit" value = "Submit" id="submit">
 {% csrf_token %}

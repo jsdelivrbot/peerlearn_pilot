@@ -131,6 +131,7 @@ textarea{
     margin-left: 20px;
     font-family: "Verdana";
     float:left;
+    height: 500px;
 }
 #display2{
     border: 3px solid;

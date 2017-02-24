@@ -28,6 +28,7 @@ DEBUG = False
 ALLOWED_HOSTS = [u'luoyang.lti.cs.cmu.edu']
 
 
+
 # Application definition
 
 INSTALLED_APPS = [

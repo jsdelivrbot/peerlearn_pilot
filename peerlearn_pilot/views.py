@@ -49,6 +49,11 @@ def provide_info(request):
     else:
         context['accuracy'] = request.POST['accuracy']
 
+    if not 'mturkid' in request.POST or not request.POST['mturkid']:
+        errors.append("You need to specify your MturkID.")
+    else:
+        context['mturkid'] = request.POST['mturkid']
+
     if errors:
         return render(request,"peerlearn_pilot/welcome.html", context)
 
